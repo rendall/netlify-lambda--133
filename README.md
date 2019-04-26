@@ -6,6 +6,7 @@ Repro repo for [netlify-lambda issue #133](https://github.com/netlify/netlify-la
 
 * Navigate to your workspace directory
 * `git clone https://github.com/rendall/netlify-lambda--133.git`
+* `cd netlify-lambda--133`
 * `npm install`
 
 ## First, to verify that it's working
@@ -77,4 +78,10 @@ SyntaxError: ./netlify-lambda--133\functions-src\hello.ts: Unexpected token (3:2
     at Parser.parseTopLevel (./netlify-lambda--133\node_modules\@babel\parser\lib\index.js:7220:10)
     at Parser.parse (./netlify-lambda--133\node_modules\@babel\parser\lib\index.js:8863:17)
     at parse (./netlify-lambda--133\node_modules\@babel\parser\lib\index.js:11135:38)
-    ```
+```
+    
+## Environment
+    
+* Node version (`node -v`) : `v11.9.0`
+* Typescript version (`tsc --version`) : `Version 3.4.1`
+* NPM version (`npm -v`) : `6.1.0
