@@ -1,0 +1,29 @@
+{
+  "name": "netlify-lambda--133",
+  "version": "1.0.0",
+  "description": "Repro repo for netlify-lambda issue #133",
+  "main": "index.js",
+  "scripts": {
+    "serve": "netlify-lambda serve ./functions-src",
+    "prebuild": "rimraf ./functions/hello.js",
+    "build": "netlify-lambda build ./functions-src",
+    "repro": "cp ./hello.ts ./functions-src/ && tsc && npm run build && npm run serve",
+    "reset": "rimraf ./functions-src/hello.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendall/netlify-lambda--133.git"
+  },
+  "author": "Rendall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rendall/netlify-lambda--133/issues"
+  },
+  "homepage": "https://github.com/rendall/netlify-lambda--133#readme",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.24",
+    "netlify-lambda": "^1.4.5",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.4.5"
+  }
+}
