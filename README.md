@@ -84,4 +84,4 @@ SyntaxError: ./netlify-lambda--133\functions-src\hello.ts: Unexpected token (3:2
     
 * Node version (`node -v`) : `v11.9.0`
 * Typescript version (`tsc --version`) : `Version 3.4.1`
-* NPM version (`npm -v`) : `6.1.0
+* NPM version (`npm -v`) : `6.1.0`
